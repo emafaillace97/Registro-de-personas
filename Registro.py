@@ -11,6 +11,12 @@ class Registro:
             self.__personas.append(persona)
         else:
             raise TypeError("No es una instacia de tipo Persona")
+    
+    def buscar_persona(self, nombre, apellido):
+        for persona in self.__personas:
+            if persona.get_nombre() == nombre and persona.get_apellido() == apellido:
+                return persona
+        return None
         
     def eliminar_persona(self, persona):
         if isinstance(persona, Persona):
