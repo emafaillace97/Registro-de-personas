@@ -8,6 +8,6 @@ class Persona:
         return self.__nombre
     
     def __str__(self):
-        return f"Nombre: {self.__nombre} - Apellido: {self.___apellido}"
+        return f"Nombre: {self.__nombre} - Apellido: {self.__apellido}"
 
 if __name__ == "__main__": pass
